@@ -1,0 +1,97 @@
+$gr: 1.61803398875;
+
+$unit: 12px;
+$unitgr: $unit * $gr;
+
+$font-family-1: Arial, sans-serif;
+$font-family-2: 'Segoe UI', sans-serif;
+$font-family-3: 'Lucida Console', monospace;
+
+$color-1: black;
+$color-2: silver;
+
+$color-a: white;
+$color-b: #EDFAEF;
+
+body {
+    background: $color-b;
+
+    padding: $unitgr;
+
+    & > .-header {
+        padding: $unitgr;
+    }
+
+    & > .-body {
+        display: flex;
+
+        & > .-primary-nav {
+            flex: 0 0 200px;
+
+            padding: $unitgr;
+        }
+
+        & > .-article {
+            background: $color-a;
+
+            flex: 1;
+
+            color: $color-1;
+
+            font-family: $font-family-1;
+            font-size: $unit;
+
+            padding: $unitgr;
+
+            @mixin h($n) {
+                h#{$n} {
+                    @if $n <= 3 {
+                        border-bottom: solid 1px $color-2;
+                    }
+
+                    font-family: $font-family-2;
+                    font-size: $unit * (1 + 1 / $n);
+                    font-weight: bold;
+                    line-height: $unitgr * round(1 + 1 / $n);
+                }
+            }
+
+            @include h(1);
+            @include h(2);
+            @include h(3);
+            @include h(4);
+            @include h(5);
+            @include h(6);
+
+            p {
+                line-height: $unitgr;
+                margin: $unitgr 0;
+            }
+
+            pre {
+                line-height: $unitgr;
+                margin: $unitgr 0;
+            }
+
+            ul, ol {
+                margin: $unitgr 0;
+                padding-left: $unitgr;
+
+                & > li {
+                    line-height: $unitgr;
+                }
+            }
+
+            ul > li { list-style: square; }
+            ol > li { list-style: decimal; }
+
+            code {
+                font-family: $font-family-3;
+            }
+        }
+    }
+
+    & > .-footer {
+        padding: $unitgr;
+    }
+}

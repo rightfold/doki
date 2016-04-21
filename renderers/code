@@ -1,0 +1,5 @@
+#!/bin/bash -e
+
+echo -n '<pre><code><![CDATA[' >> "$2"
+cat "$1" >> "$2"
+echo -n ']]></code></pre>' >> "$2"

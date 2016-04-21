@@ -1,0 +1,9 @@
+#!/bin/bash -e
+
+echo '<ul>' >> "$2"
+ls -p "$1" | awk '
+  {
+    print "<li><a href=\"" $0 "\">" $0 "</a></li>"
+  }
+' >> "$2"
+echo '</ul>' >> "$2"

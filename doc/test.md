@@ -1,6 +1,3 @@
-Markdown
-========
-
 Version 1.0.1 - Tue 14 Dec 2004
 
 by John Gruber
@@ -10,13 +7,51 @@ by John Gruber
 Introduction
 ------------
 
-Markdown is a text-to-HTML conversion tool for web writers. Markdown
-allows you to write using an easy-to-read, easy-to-write plain text
-format, then convert it to structurally valid XHTML (or HTML).
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit
+ultrices quam sit amet pharetra. Nam maximus nulla sed rhoncus pulvinar. Donec
+accumsan, odio a mattis molestie, mi sem finibus ligula, at ultrices dolor nisi
+in metus. Ut consequat porttitor ante, at dictum lectus sollicitudin ac. Cras
+bibendum in massa ac interdum. Curabitur nec arcu erat. Etiam feugiat maximus
+molestie. Aenean ultricies dolor eu euismod luctus. Duis in justo arcu. Nulla
+feugiat mauris ac turpis porta, at tincidunt arcu tristique. Suspendisse a
+euismod elit. Phasellus interdum metus quis mi ornare dapibus. Pellentesque vel
+velit vitae neque porta maximus a sed nisi. Donec elementum, nibh non cursus
+hendrerit, magna dui condimentum risus, pharetra tristique dolor sapien eu
+turpis. Aliquam sagittis eget sem a tincidunt. Morbi non justo vel mauris
+facilisis rhoncus ut vel quam.
 
-Thus, "Markdown" is two things: a plain text markup syntax, and a
-software tool, written in Perl, that converts the plain text markup
-to HTML.
+Nulla et consectetur nunc. Maecenas eu pretium nulla. Ut consequat porta tellus
+ac finibus. Phasellus dignissim lobortis nisi non pellentesque. Morbi sed erat
+libero. Sed vestibulum nulla non diam suscipit, vel blandit nibh varius. Integer
+et mollis quam. In fermentum nulla et varius placerat. Vestibulum bibendum
+turpis id ex hendrerit rhoncus. Pellentesque imperdiet neque et hendrerit
+sollicitudin. Sed a tortor nisl. Quisque faucibus eget erat quis dapibus. Proin
+dictum dui ex, eget interdum sapien luctus in.
+
+Nulla consectetur molestie viverra. Suspendisse mattis mollis ullamcorper. Sed
+cursus sit amet arcu nec pharetra. Duis laoreet hendrerit suscipit. Suspendisse
+bibendum justo ac tempus tristique. Suspendisse ornare nulla semper dui volutpat
+faucibus. Sed id placerat elit. Phasellus quis nulla vitae magna fringilla
+laoreet ac ac nisi. Pellentesque sit amet hendrerit magna. Vivamus imperdiet
+turpis id nunc posuere, id varius ante rutrum. Mauris at imperdiet ex.
+Vestibulum eu tempor urna. Nullam sed sem ac augue interdum posuere.
+
+Quisque dignissim orci sed tortor sodales, at ultrices magna tincidunt. Proin
+non risus vehicula lacus pellentesque ullamcorper. Curabitur ante felis, pretium
+eget fermentum eu, accumsan eu lacus. Phasellus ac condimentum lectus. Phasellus
+nec efficitur diam. Nunc suscipit aliquet malesuada. Nunc aliquam odio quis
+velit congue scelerisque. Nulla et eros et ipsum tempus tincidunt. Nam ut eros
+quam. Vivamus tristique ipsum vel dui gravida, id hendrerit purus efficitur.
+Cras porttitor convallis risus, nec imperdiet quam rutrum ultricies.
+
+Mauris condimentum suscipit lorem, eu lacinia nisi dignissim sit amet. Phasellus
+a eros in velit vehicula congue. Cras ut ornare urna. Praesent bibendum neque
+vel orci sollicitudin imperdiet. Quisque interdum magna sed massa convallis
+cursus et ut risus. Donec sollicitudin arcu ut purus efficitur vehicula.
+Maecenas congue odio in posuere gravida. Donec eros odio, porttitor id dictum
+ac, bibendum at magna. Fusce eu volutpat orci. Maecenas auctor ante vitae urna
+imperdiet pretium. Praesent dolor nulla, pellentesque vel est eu, gravida luctus
+dui.
 
 Markdown works both as a Movable Type plug-in and as a standalone Perl
 script -- which means it can also be used as a text filter in BBEdit

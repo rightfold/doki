@@ -8,7 +8,13 @@ import System.FilePath.Posix (takeExtension)
 
 newtype PageID = PageID FilePath deriving (Eq, Show)
 
-newtype PageType = PageType String deriving (Eq, Ord, Show)
+data PageType
+  = FilePageType String
+  | FolderPageType
+  deriving (Eq, Ord, Show)
 
 pageType :: PageID -> PageType
-pageType (PageID id) = PageType $ drop 1 (takeExtension id)
+pageType (PageID id) =
+  if not (null id) && last id == '/'
+  then FolderPageType
+  else FilePageType $ drop 1 (takeExtension id)

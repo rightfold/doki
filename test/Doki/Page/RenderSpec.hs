@@ -3,7 +3,7 @@ module Doki.Page.RenderSpec
 ( spec
 ) where
 
-import Doki.Page (PageID(PageID), PageType(PageType))
+import Doki.Page (PageID(PageID), PageType(FilePageType))
 import Doki.Page.Render
 import Doki.Wiki (Wiki(Wiki))
 import System.IO.Temp (withSystemTempDirectory)
@@ -20,13 +20,13 @@ spec = do
         Left NoRendererAvailable -> True
         _ -> False
     it "bad XML" $ do
-      go (Map.singleton (PageType "html") (PageRenderer "cp"))
+      go (Map.singleton (FilePageType "html") (PageRenderer "cp"))
          "<strong>hello world</strong"
          $ \case
              Left (XMLParseError _) -> True
              _ -> False
     it "success" $ do
-      go (Map.singleton (PageType "html") (PageRenderer "cp"))
+      go (Map.singleton (FilePageType "html") (PageRenderer "cp"))
          "<strong>hello world</strong>"
          $ \case
              Right xml -> xml == xmlParse "" "<strong>hello world</strong>"
