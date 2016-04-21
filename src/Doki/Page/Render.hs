@@ -43,6 +43,6 @@ renderPage' (PageRenderer r) inpath =
   withSystemTempDirectory "" $ \outdir -> runEitherT $ do
     let outpath = outdir ++ "/out"
     efrf $ try (callProcess r [inpath, outpath])
-    xml <- efrf $ try (readFile inpath) -- TODO: UTF-8
+    xml <- efrf $ try (readFile outpath) -- TODO: UTF-8
     hoistEither $ XMLParseError `first` (xmlParse' outpath xml)
   where efrf a = EitherT $ first RendererFailure <$> a

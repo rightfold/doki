@@ -9,9 +9,9 @@ library
   build-depends:        base,
                         containers,
                         either,
+                        filepath,
                         HaXml,
                         process,
-                        split,
                         temporary
   ghc-options:          -Wall
   default-language:     Haskell2010
@@ -20,7 +20,14 @@ executable doki-exe
   hs-source-dirs:       app
   main-is:              Main.hs
   ghc-options:          -Wall -threaded -rtsopts -with-rtsopts=-N
-  build-depends:        base, doki
+  build-depends:        base,
+                        containers,
+                        doki,
+                        happstack-server,
+                        HaXml,
+                        MissingH,
+                        pretty,
+                        transformers
   default-language:     Haskell2010
 
 test-suite doki-test

@@ -4,14 +4,11 @@ module Doki.Page
 , pageType
 ) where
 
-import Data.List.Split (splitOn)
+import System.FilePath.Posix (takeExtension)
 
-newtype PageID = PageID FilePath
+newtype PageID = PageID FilePath deriving (Eq, Show)
 
 newtype PageType = PageType String deriving (Eq, Ord, Show)
 
 pageType :: PageID -> PageType
-pageType (PageID id) =
-  case splitOn "." id of
-    [_] -> PageType ""
-    xs -> PageType (last xs)
+pageType (PageID id) = PageType $ drop 1 (takeExtension id)

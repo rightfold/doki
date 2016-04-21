@@ -1,0 +1,5 @@
+#!/bin/bash -e
+
+echo '<div>' >> "$2"
+cat "$1" | perl renderers/markdown/Markdown.pl >> "$2"
+echo '</div>' >> "$2"
